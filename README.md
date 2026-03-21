@@ -1,7 +1,3 @@
-這是一個為您的 GitHub 專案準備的 `README.md` 範本。您可以直接複製以下內容並根據需要進行微調。
-
----
-
 # 股票爬蟲專案：蟲蟲危機 🐛
 
 本專案包含兩支 Python 爬蟲程式，專門用於抓取台積電（TSM / 2330.TW）的歷史股價資料。
@@ -38,10 +34,3 @@
 2. 安裝必要套件：`pip install selenium pandas`。
 3. 執行程式：`python 兩隻爬蟲.py`。
 
----
-
-### 💡 提示
-如果您有任何問題，除了查看代碼註解外，觀看上述影片能幫您更快理解網頁結構與爬取邏輯！
-
-
-http://googleusercontent.com/youtube_content/0
