@@ -2,6 +2,9 @@
 來源:https://service.moea.gov.tw/EE520/investigate/InvestigateEA.aspx(經濟部統計處調查專區)
 出國旅客按首站抵達地含年齡.性別.csv
 來源:https://stat.taiwan.net.tw/(交通部觀光署觀光統計資料庫)
+開店數exl
+來源:https://www.mof.gov.tw/singlehtml/285?cntId=0d3befe0fe9640d2a3c87bd612416683(財政部財政統計月報)
+
 
 
 
