@@ -1,36 +1,32 @@
-TRUNCATE TABLE Fact_便利商店密度; --確保table是空的
-
---建一張每年、每區的累積店數虛擬表
-WITH YearList AS (
-    SELECT 2018 AS RptYear 
-    UNION SELECT 2019 
-    UNION SELECT 2020 
-    UNION SELECT 2021 
-    UNION SELECT 2022 
-    UNION SELECT 2023 
-    UNION SELECT 2024 
-    UNION SELECT 2025 
-    UNION SELECT 2026
+--建一個虛擬資料表整理年月及「截至該月底」的累計店數
+WITH MonthList AS (
+    SELECT CAST('2018-01-01' AS DATE) AS MonthStart
+    UNION ALL
+    SELECT DATEADD(MONTH, 1, MonthStart)
+    FROM MonthList
+    WHERE MonthStart < '2026-12-01'
 ),
-CumulativeStats AS (
+MonthlyCumulative AS (
     SELECT 
-        y.RptYear,
+        YEAR(m.MonthStart) AS RptYear,
+        MONTH(m.MonthStart) AS RptMonth,
         s.縣市,
         s.行政區,
-        COUNT(*) AS TotalCount
-    FROM YearList y
-    INNER JOIN 全國5大超商資料集 s ON s.西元設立日期 <= DATEFROMPARTS(y.RptYear, 12, 31) --累計至該年年底
-    GROUP BY y.RptYear, s.縣市, s.行政區
+        COUNT(*) AS TotalCount,
+        EOMONTH(m.MonthStart) AS EndOfMonth --每個月最後一天
+    FROM MonthList m
+    INNER JOIN 全國5大超商資料集 s ON s.西元設立日期 <= EOMONTH(m.MonthStart)
+    GROUP BY YEAR(m.MonthStart), MONTH(m.MonthStart), s.縣市, s.行政區, EOMONTH(m.MonthStart)
 )
-
---insert進事實資料表中
-INSERT INTO Fact_便利商店密度 ([年度], [縣市], [行政區], [店面數], [土地面積], [超商密度])
+INSERT INTO Fact_便利商店密度 ([年度], [月份], [縣市], [行政區], [店面數], [土地面積], [超商密度]) --INSERT進事實表
 SELECT 
-    cs.RptYear,
-    cs.縣市,
-    cs.行政區,
-    cs.TotalCount,
+    mc.RptYear,
+    mc.RptMonth,
+    mc.縣市,
+    mc.行政區,
+    mc.TotalCount,
     da.土地面積,
-    CAST(cs.TotalCount AS DECIMAL(18,6)) / da.土地面積 AS Density --轉換型別避免預設的整數除法
-FROM CumulativeStats cs
-INNER JOIN 各縣市鄉鎮市區土地面積及人口密度 da ON cs.縣市 = da.縣市 AND cs.行政區 = da.行政區;
+    CAST(mc.TotalCount AS DECIMAL(18,6)) / da.土地面積 AS Density --轉換型別避免整數除法
+FROM MonthlyCumulative mc
+INNER JOIN 各縣市鄉鎮市區土地面積及人口密度 da ON mc.縣市 = da.縣市 AND mc.行政區 = da.行政區 
+OPTION (MAXRECURSION 200); --預設遞迴次數維100，不夠，所以調整上限為200
