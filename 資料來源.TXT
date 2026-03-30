@@ -5,6 +5,12 @@
 開店數exl
 來源:https://www.mof.gov.tw/singlehtml/285?cntId=0d3befe0fe9640d2a3c87bd612416683(財政部財政統計月報)
 
+全國5大超商資料集.csv
+來源：商工行政資料開放平臺 https://data.gcis.nat.gov.tw/od/detail?oid=0202BFA9-8116-4E63-A41A-58A5F4EAF7A2
+各縣市鄉鎮市區土地面積及人口密度.csv
+來源：內政部戶政司全球資訊網 https://www.ris.gov.tw/info-popudata/app/awFastDownload/file/y0s6-00000.xls/y0s6/00000/
+
+
 
 
 
