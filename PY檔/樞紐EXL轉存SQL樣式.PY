@@ -2,13 +2,13 @@ import pandas as pd
 import os
 
 # 1. 設定參數
-folder_path = r'.\107-114開店數exl' 
+folder_path = r'C:\0324專題\260321_nNiseproj\.venv\107-114開店數exl' 
 target_sheet = '表(續4)'
 all_data = []
 
 # 設定要篩選的目標值 (59 或 561, 562, 563, 569)
 # 建議同時放入字串與數字，確保 Excel 格式不一時都能抓到
-target_values = [59, 561, 562, 563, '59', '561', '562', '563']
+target_values = [56, 561, 562, 563, '56', '561', '562', '563']
 
 # 取得檔案清單並過濾暫存檔
 file_list = [f for f in os.listdir(folder_path) if f.endswith(('.xlsx', '.xls')) and not f.startswith('~$')]
