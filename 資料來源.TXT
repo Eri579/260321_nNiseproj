@@ -10,7 +10,14 @@
 各縣市鄉鎮市區土地面積及人口密度.csv
 來源：內政部戶政司全球資訊網 https://www.ris.gov.tw/info-popudata/app/awFastDownload/file/y0s6-00000.xls/y0s6/00000/
 
-
-
+市區汽車客運路線與車輛數.csv
+來源：交通統計網https://statis.motc.gov.tw/motc/Statistics/Display?Seq=901&Start=105-00-00&End=115-02-00&ShowYear=true&ShowMonth=true&ShowQuarter=false&ShowHalfYear=false&Mode=0&ColumnValues=9588_9591_9457_9462
+fact_GOGORO年月銷售.csv
+fact_Tesla機動車輛新車領牌數.csv
+來源：交通部公路局 統計查詢網https://stat.thb.gov.tw/hb01/webMain.aspx?sys=100&funid=11200
+月營收_2330.xls
+來源：Goodinfo! 台灣股市資訊
+fact_家用電器銷量.csv
+來源：經濟部https://service.moea.gov.tw/EE520/investigate/InvestigateDA.aspx
 
 
