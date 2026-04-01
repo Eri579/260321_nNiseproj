@@ -1,8 +1,8 @@
 import pandas as pd
 
 # 1. 讀取原始檔案
-file_name = '電動車領牌數_Final.csv'
-output_name = '電動車領牌數_月補零_Final.csv'
+file_name = '出國旅客按首站抵達地含年齡.性別_清洗後.csv'
+output_name = '出國旅客按首站抵達地含年齡.性別_Final.csv'
 
 try:
     # 建議使用 utf-8-sig 以確保中文不亂碼
