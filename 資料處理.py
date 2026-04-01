@@ -1,8 +1,8 @@
 import pandas as pd
 
 # 1. 讀取原始檔案
-file_name = '市區汽車客運路線與車輛數_清洗後.csv'
-output_name = '市區汽車客運路線與車輛數_Final.csv'
+file_name = 'DimDate_2000-2045_已加工.csv'
+output_name = 'DimDate_2000-2045_Final.csv'
 
 try:
     # 建議使用 utf-8-sig 以確保中文不亂碼
