@@ -1,0 +1,18 @@
+DimDate = 
+VAR StartDate = DATE(2018, 1, 1)
+VAR EndDate = DATE(2026, 12, 31)
+RETURN
+    ADDCOLUMNS (
+        CALENDAR(StartDate, EndDate),
+        "年份", YEAR([Date]),
+        "季度", "Q" & QUARTER([Date]),
+        "月份數字", MONTH([Date]),
+        -- 修正點 1：簡化月份名稱，使用 FORMAT 即可直接產出 "1月"
+        "月份名稱", FORMAT([Date], "M月"),
+        -- 修正點 2：增加 YYYYMM 欄位，方便你用 202501 這種格式進行關聯
+        "年月Key", YEAR([Date]) * 100 + MONTH([Date]),
+        "年份月份", FORMAT([Date], "yyyy-MM"),
+        "星期", SWITCH(WEEKDAY([Date], 1), 1,"週日", 2,"週一", 3,"週二", 4,"週三", 5,"週四", 6,"週五", 7,"週六"),
+        "工作日", IF(WEEKDAY([Date], 2) > 5, "週末", "平日"),
+        "年週序", YEAR([Date]) & "W" & WEEKNUM([Date], 2)
+    )
