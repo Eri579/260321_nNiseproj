@@ -11,7 +11,7 @@
 來源：內政部戶政司全球資訊網 https://www.ris.gov.tw/info-popudata/app/awFastDownload/file/y0s6-00000.xls/y0s6/00000/
 
 市區汽車客運路線與車輛數.csv
-來源：交通統計網https://statis.motc.gov.tw/motc/Statistics/Display?Seq=901&Start=105-00-00&End=115-02-00&ShowYear=true&ShowMonth=true&ShowQuarter=false&ShowHalfYear=false&Mode=0&ColumnValues=9588_9591_9457_9462
+來源：交通統計查詢網https://statis.motc.gov.tw/motc/Statistics/Display?Seq=78&Start=105-00-00&End=113-03-00&ShowYear=true&ShowMonth=true&ShowQuarter=false&ShowHalfYear=false&Mode=0&ColumnValues=530&CodeListValues=612_614_615_616_617_618_619_620_621_622_623_624_625_626_627_628_629_630_631_632_633_635_636
 fact_GOGORO年月銷售.csv
 fact_Tesla機動車輛新車領牌數.csv
 來源：交通部公路局 統計查詢網https://stat.thb.gov.tw/hb01/webMain.aspx?sys=100&funid=11200
