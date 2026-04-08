@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import PI as px
+import plotly.express as px
 from sklearn.datasets import load_iris
 
 # --- 頁面設定 ---
