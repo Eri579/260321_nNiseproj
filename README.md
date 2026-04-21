@@ -12,20 +12,28 @@
 
 ![資料來源](images/資料來源.png)
 
-
+![爬蟲](images/SELENIUM.png)
 
 ### 2. 資料清洗ETL
 ## 🛠 使用技術與工具
 * **EXCEL**：資料基本處理。
 * **Python**：Pandas。
 * **SQL語法、DAX語法**：資料二次清洗。
-* **Aruze SQL SERVER**：雲端資料庫架設及使用。
+* **Azure SQL SERVER**：雲端資料庫架設及使用。
 * **SQL SERVER資料篩選自製工具**：資料挑選匯出。
+
+![Azure](images/ARUZE.png)
+
+![SQLtool](images/SQLTOOL.png)
 
 ### 3. 資料呈現與分析
 * **POWER BI**：資料圖表呈現。
 * **資料分析**：資料趨勢分析及預測。
 
+![星狀結構](images/SCHEMA.png)
 
+![正規化](images/正規化粒度對齊.png)
 
+![關係係數r](images/關係係數r.png)
 
+![行_電動車購買力](images/tsmc_tesla.png.png)
