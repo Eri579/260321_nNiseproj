@@ -22,7 +22,7 @@
 * **Azure SQL SERVER**：雲端資料庫架設及使用。
 * **SQL SERVER資料篩選自製工具**：資料挑選匯出。
 
-![Azure](images/ARUZE.png)
+![Azure](images/AzureSQL.png)
 
 ![SQLtool](images/SQLTOOL.png)
 
@@ -36,4 +36,4 @@
 
 ![關係係數r](images/關係係數r.png)
 
-![行_電動車購買力](images/tsmc_tesla.png.png)
+![行_電動車購買力](images/tsmc_tesla.png)
