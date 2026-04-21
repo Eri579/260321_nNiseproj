@@ -9,6 +9,9 @@
 * **TSMC_2330股價** 的完整股票資料。
 * **公開資料平台及網站** 的資料抓取(食衣住行)。
 * **Python**：Selenium、Requests。
+![資料來源]https://github.com/Eri579/260321_nNiseproj/tree/main/images/資料來源.png
+
+
 
 ### 2. 資料清洗ETL
 ## 🛠 使用技術與工具
@@ -16,6 +19,7 @@
 * **Python**：Pandas。
 * **SQL語法、DAX語法**：資料二次清洗。
 * **Aruze SQL SERVER**：雲端資料庫架設及使用。
+* **SQL SERVER資料篩選自製工具**：資料挑選匯出。
 
 ### 3. 資料呈現與分析
 * **POWER BI**：資料圖表呈現。
