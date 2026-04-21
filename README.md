@@ -9,7 +9,8 @@
 * **TSMC_2330股價** 的完整股票資料。
 * **公開資料平台及網站** 的資料抓取(食衣住行)。
 * **Python**：Selenium、Requests。
-![資料來源]https://github.com/Eri579/260321_nNiseproj/tree/main/images/資料來源.png
+
+![資料來源](https://github.com/Eri579/260321_nNiseproj/tree/main/images/資料來源.png)
 
 
 
