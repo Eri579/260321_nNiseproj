@@ -32,8 +32,8 @@
 
 ![星狀結構](images/SCHEMA.png)
 
-![正規化](images/正規化粒度對齊.png)
+![正規化](images/dim.png)
 
-![關係係數r](images/關係係數r.png)
+![關係係數r](images/datar.png)
 
 ![行_電動車購買力](images/tsmc_tesla.png)
