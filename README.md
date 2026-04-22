@@ -32,9 +32,9 @@
 
 ![星狀結構](images/SCHEMA.png)
 
-![正規化](images/dim.png)
+![正規化](images/dim.PNG)
 
-![關係係數r](images/datar.png)
+![關係係數r](images/datar.PNG)
 
 
 ## 圖表核心分析與說明
