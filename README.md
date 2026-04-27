@@ -94,6 +94,10 @@
 
 ![SQLtool](images/SQLTOOL.png)
 
+![SQLtool](images/SQLSERVER01.png)
+
+![SQLtool](images/SQLSERVER02.png)
+
 ### 3. 資料呈現與分析
 * **POWER BI**：資料圖表呈現。
 * **資料分析**：資料趨勢分析及預測。
